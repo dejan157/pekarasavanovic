@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Indie+Flower&family=Julee&family=Pacifico&display=swap');
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+	/* background-color: blue; */
+	/* overflow-x: hidden; */
+}
+a{
+	text-decoration: none;
+}
+.active{
+	color: #cfb27e !important;
+	border-bottom: 2px solid #cfb27e;
+}
+li{
+	list-style-type: none;
+	display: inline;
+}
+.center{
+	margin: 0px, auto;
+	background-color:rgba(48, 39, 21,0.7);
+	height:80px;
+}
+#logo2{
+	float: left;
+	display: inline-block;
+}
+.logo{
+	width: 450px;
+	margin-top:15px;
+	margin-left:30px;
+}
+nav{
+	display: inline-block;
+	float: right;
+	text-align: right;
+	position: relative;
+	margin: 10px 50px;
+}
+nav ul li{
+	margin-left: 20px;
+	display: inline-block;
+	padding: 17px 15px 0px 0px;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+nav ul li a{
+	font-weight: 700;
+	color: #FFF;
+}
+nav ul li a:hover{
+	border-bottom: 2px solid #cfb27e;
+	color:#cfb27e;
+}
+:root{
+	--boja:#fff;
+}
+.clear{
+	clear: both;
+}
+header{
+	width:100%;
+	display: block;
+	position: fixed;
+	z-index: 3;
+}
+footer{
+	width: 100%;
+	height: 300px;
+	/* background-color: #614718; */
+	background-color:rgb(48, 39, 21);
+	display: block;
+}
+/* h1{  */
+	 /* position: absolute;  */
+	 /* font-family: 'Courgette', cursive;  */
+	 /* color: #FFF;  */
+     /* top: 21px;  */
+	 /* margin-left:200px;  */
+     /* /* left: calc(10% - 60px);  */ */
+	 /* text-transform:uppercase;  */
+	/* /* border-left: 4px solid #614718; */  */
+ /* }  */
+#pekara{
+	text-align:center;
+	width:100%;
+		position:absolute;
+	/* background-color:rgba(0, 0, 0, 0.5); */
+	/* height:inherit; */
+	
+}
+#pekara h1{
+	position: absolute;
+	margin: 320px 0px 0px 610px;
+	font-size: 90px;
+    letter-spacing: 1px;
+	font-weight: 500;
+	color:#FFF;
+}
+#pekara p{
+	margin: 440px 0px 0px 750px;
+	position: absolute;
+	font-size:30px;
+	letter-spacing:3px;
+	font-weight: 500;
+	color:#FFF;
+}
+#pekara button{
+	margin: 500px 0px 0px 860px;
+	border-radius: 10px;
+	border: none;
+	color: #FFF;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	transition-duration: 0.3s;
+	cursor: pointer;
+	background-color: #302715;
+	font-weight:bold;
+}
+#pekara button:hover{
+	background-color: #27963d;
+	color: #FFF;
+}
+.back{
+	background-image: url("../img/pp3.jpg");
+	/* background-color:rgba(0,0,0,0.5); */
+	height:900px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position:relative;
+}
+.h{
+	width:100%;
+	height: 1000px;
+	background-color: #FFF;
+}
+main{
+	display:block;
+}
+#block-ponude h2{
+	text-align: center;
+	width: 100%;
+	
+	margin-bottom:80px;
+	font-size: 30px;
+
+}
+.f{
+	height:1000px;
+}
+/* .naslov .border-bottom{ */
+	/* color:green; */
+	/* width: 20px; */
+	/* height:5px; */
+/* } */
+.ponude{
+	display:flex;
+	justify-content:space-between;
+	margin:40px auto;
+	flex-wrap:wrap;
+
+	height:230px;	
+	font-size:40px;
+	text-align:center;
+
+}
+.ponuda{
+	padding:0px 50px 0px 50px;
+	width:24.5%;
+	
+}
+/* .margina{ */
+	/* margin-left:30px; */
+/* } */
+.ponude p{
+	font-size:17px;
+	margin-top: 15px;
+}
+.ponude h3{
+	font-size:21px;
+}
+#galerija{
+	width:100%;
+	height:1250px;
+	display:flex;
+	background-color:#cfb27e;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+}
+#galerija .slika{
+	width:23%;
+	margin:10px 0px;
+	/* filter: grayscale(100%); */
+	transition-duration: 0.3s;
+}
+.slika img {
+    border-radius: 20px;
+	width:85%;
+}
+.dd{
+	height:500px;
+	/* background-color:#63540f; */
+	background-color:#FFF;
+}
+.dd2{
+	height:500px;
+	background-color:#cfb27e;
+}
+#prazno{
+	height:100px;
+	background-color:#FFF;
+}
+#prazno2{
+	height:80px;
+	background-color:#cfb27e;
+}
+.sadržaj-futera{
+	display:flex;
+	align-items:center;
+	padding:30px 0px;
+	color:#FFF;
+}
+.podaci{
+	width:35%;
+	text-align:center;
+	margin-top:50px;
+}
+.podaci h4{
+	font-size:23px;
+}
+.podaci h4, .podaci p{
+	margin-bottom: 10px;
+}
+#logo-futer{
+	width:30%;
+}
+.linkovi{
+	display:flex;
+	justify-content:center;
+	text-align:center;
+}
+.linkovi a:hover{
+	color:#FFF;
+}
+footer a{
+	color:#cfb27e;
+	font-size:25px;
+}
+.linkovi a{
+	padding:10px;
+	background-color:;
+	border-radius:5px;
+	margin-top:50px;
+}
