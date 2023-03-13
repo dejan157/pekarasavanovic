@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="sr">
 	<head>
 		<meta charset="UTF-8"/>
+		<meta name="keywords" content="pekara, savanovic, savanović, hleb, kifla, pecivo, burek">
+		<meta name="author" content="Dejan Savanović">
+		<meta name="description" content="Pekara Savanović je pekara visokog kvaliteta koja ima najvernije kupce">
+		<meta name="copyright" content="Sva prava zadržana od strane pekare Savanović">
 		<title>Pekara Savanović - Ukusna strana interneta</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<link rel="shourtcut icon" href="img/favicon.png"/>
+		<link rel="shourtcut icon" href="img/favicon.ico"/>
 		<script src="https://kit.fontawesome.com/a9822c877d.js" crossorigin="anonymous"></script>
-		<meta name="keywords" content="Pekara, Hleb, Kifla, Pecivo, Burek">
-		<meta name="author" content="Dejan Savanović">
 	</head>
 	<body>
 		<header>
 			<div class="center">
 				<div id="logo2">
 					<a href="index.html">
-						<img src="img/logoo.png" class="logo" alt="logo"/>
+						<img src="img/logo.png" class="logo" alt="logo"/>
 					</a>
 				</div>
 				<nav>
@@ -29,10 +31,7 @@
 							<a href="proizvodi.html">Proizvodi</a>
 						</li>
 						<li>
-							<a href="#prazno2">Galerija</a>
-						</li>
-						<li>
-							<a href="kontakt.html">Kontakt</a>
+							<a href="kontakt.html">Naruči</a>
 						</li>
 						<li>
 							<a href="autor.html">Autor</a>
@@ -43,94 +42,286 @@
 			</div>
 		</header>
 		
-		<div class="back">
+		<div class="back back-pocetna">
 			<div id="pekara">
 				<h1>Pekara Savanović</h1>
-				<p>Ukusna strana interneta...</p>
-				<button type="button" onclick="document.location='proizvodi.html'" target="_blank">NAŠI PROIZVODI</button>
-				<a href="#prazno">
-					<i class="fa-solid fa-arrow-down"></i>
-				</a>
+				<p>Ukusna strana interneta</p>
+				<div class="top">
+					<a class="dugme" href="proizvodi.html">NAŠI PROIZVODI</a>
+				</div>
+				<div class="strelica">
+					<a href="#opekari">
+						<i class="fa-solid fa-arrow-down"></i>
+					</a>
+				</div>
 			</div>
 		</div>
 			
-		<main>			
-			<div id="prazno">
+		<main>		
+			<div id="opekari">
+				<div class="naslov">
+					<h2>Priča naše pekare</h2>
+					<div class="hr"></div>
+				</div>
+				<div class="opekari-sadržaj">
+					<div class="opekari-sadržaj-levo">
+						<img src="img/pecivo.png" alt="Pecivo">
+					</div>
+					<div class="opekari-sadržaj-desno">
+						<p>Nastala na temeljima pekarske zadruge osnovane 1946. godine, AD “Pekara Savanović“ proizvodi hleb, peciva i ostale pekarske proizvode, na radost vernih potrošača koji umeju da prepoznaju kvalitet i uživaju u njemu. Pekarstvo u Srbiji ima viševekovnu tradiciju čiji je baštinik “Pekara Savanović” koja koristi iskustvo predaka i prilagođava ga duhu savremenog života. U bogatom asortimanu naše pekare, nalaze se industrijski hlebovi – “Sava”, “Avala”, kao i specijalne vrste hleba sa različitim vrstama brašna i zrnevlja, namenske vrste hleba umešene tradcionalnom metodom ručne izrade, smrznuto pecivo vrhunskog kvaliteta, krofne, prezle i ostali pekarski proizvodi.</p>
+						<br/>
+						<p>Pekara je u procesu stalne modernizacije sa ambicioznim, ali realnim planovima ulaganja u nove proizvodne tehnologije. Znanje I umešnost u oblasti pekarstva, uz prihvatanje savremenih poslovnih modela  zasigurno će rezultirati unapređenjem tržišne pozicije i još uspešnijem zadovoljavanju potreba potrošača i saradnika.</p>
+						<div class="marginTop50 marginLeft">
+							<a class="dugme" href="o-nama.html">SAZNAJTE VIŠE</a>
+						</div>
+					</div>
+						
+				</div>	
 			</div>
 			<div id="block-ponude">
-				<h2>Nudimo Vam</h2>
-				<!-- <div class="border-bottom"></div> -->
+				<div class="naslov">
+					<h2>Nudimo Vam</h2>
+					<div class="hr"></div>
+				</div>
 				<div class="ponude">
 					<div class="ponuda">
 						<i class="fa-solid fa-burger"></i>
-						<h3>Najukusniju hranu na jednom mestu</h3>
-						<p>Naša peciva su napravljena od najboljeg domaćeg brašna. Trudimo se da ispunimo sva vaša očekivanja <strong>kvalitetnom</strong> i <strong>ukusnom</strong> hranom.</p>
+						<h3>Najukusniju hranu</h3>
+						<p>Naša peciva su napravljena od najboljeg <span class="bold">domaćeg</span> brašna. Trudimo se da ispunimo sva vaša očekivanja <span class="bold">kvalitetnom</span> i <span class="bold">ukusnom</span> hranom. Sa nama ste uvek sigurni i možete se osloniti na naše <span class="bold">neverovatne veštine</span> i <span class="bold">izuzetna znanja</span> u pekarstvu. Pekara Savanović vam želi sve najlepše!</p>
 					</div>
 					<div class="ponuda">
 						<i class="fa-solid fa-heart"></i>
 						<h3>Recepte koje ćete zavoleti</h3>
-						<p>Naša receptura je sakupljana još od <strong>starijih generacija</strong>. Svaki kvalitetan recept iz naše porodice, našao se urezan u našim kuhinjama, a verujemo i vašim!</p>
+						<p>Naša receptura je sakupljana još od <span class="bold">starijih generacija</span>. Svaki kvalitetan recept iz naše porodice, našao se urezan u našim divnim kuhinjama, a verujemo i vašim! Svako od vas nam može slati recepte u bilo koje vreme, a mi ćemo <span class="bold">svake nedelje</span> objaviti tri najbolja i recepta na našem sajtu!</p>
 					</div>
 					<div class="ponuda">
 						<i class="fa-solid fa-truck-fast"></i>
-						<h3>Najbržu dostavu po čitavoj Srbiji</h3>
-						<p>Naša dostava je opremljena <strong>najsavremenijim</strong> prevoznim sredstvima. Takođe, najvredniji dostavljači potrudiće se da se ispred vaših vrata pojavi ono što ste naručili!</p>
+						<h3>Najbržu dostavu</h3>
+						<p>Naša ekipa je opremljena <span class="bold">savremenim</span> prevoznim sredstvima. Naši vredni dostavljači će vam doneti hranu za veoma <span class="bold">kratko vreme</span>! Sve što je potrebno da uradite jeste da naručite preko naše stranice „Naruči", a ostalo prepustite nama. Radujemo se vašim porudžbinama i tu smo <span class="bold">zbog vas</span>!</p>
 					</div>
 					<div class="ponuda">
 						<i class="fa-solid fa-coins"></i>
 						<h3>Neverovatno niske cene</h3>
-						<p>Niske cene su samo jedna od stvari po kojoj je naša pekara prepoznatljiva. Budite veoma brzi, povremeno se sprema akcija na odabrane proizvode koja traje do <strong>isteka zaliha<strong>!</p>
+						<p><span class="bold">Niske cene</span> su samo jedna od stvari po kojoj je naša pekara prepoznatljiva. Povremeno se sprema <span class="bold">akcija</span> na odabrane proizvode koja traje do <span class="bold">isteka zaliha</span>! Zbog toga vam savetujemo da budete veoma brzi i da ne propustite pomenute akcije koje će vas, verujte nam, obradovati.</p>
 					</div>
 				</div>
-				<div class="dd2">
-				
+			</div>
+			<div class="proizvodi marginBottom">
+				<div class="naslov">
+					<h2>Najprodavaniji proizvodi</h2>
+					<div class="hr"></div>
 				</div>
-				<div class="dd">
-				
+				<div class="proizvod transformacija">
+					<img src="img/kroasan.jpg" alt="Kroasan">
+					<h3>Kroasan sa vanilom</h3>
+					<hr/>
+					<div class="cena">69.99 RSD</div>	
+					<p>Brašno, kvasac, voda, vanila</p>
 				</div>
-				<div id="prazno2">
+				<div class="proizvod transformacija">
+					<img src="img/hleb.jpg" alt="Hleb">
+					<h3>Hleb Martin</h3>
+					<hr/>	
+					<div class="cena">59.99 RSD</div>	
+					<p>Brašno, kvasac, voda, so</p>		
 				</div>
-				<div id="galerija">
-					<h2>Galerija</h2>
-					<div class="slika">
-						<img src="img/radno-mesto.jpg" alt="Radno mesto">
-					</div>
-					<div class="slika">
-						<img src="img/izlog.jpg" alt="Izlog">
-					</div>
-					<div class="slika">
-						<img src="img/kolači.jpg" alt="Kolači">
-					</div>
-					<div class="slika">
-						<img src="img/peciva.jpg" alt="Peciva">
-					</div>
-					<div class="slika">
-						<img src="img/kifle.jpg" alt="Kifle">
-					</div>
-					<div class="slika">
-						<img src="img/izlog-2.jpg" alt="Izlog 2">
-					</div>
-					<div class="slika">
-						<img src="img/prilog.jpg" alt="Prilog">
-					</div>
-					<div class="slika">
-						<img src="img/testo.jpg" alt="Testo">
-					</div>
+				<div class="proizvod transformacija">
+					<img src="img/sendvič.jpg" alt="Sendvič">
+					<h3>Đački sendvič</h3>
+					<hr/>
+					<div class="cena">99.99 RSD</div>	
+					<p>Paradajz, salata, sir, šunka</p>
 				</div>
-			</div>			
+			</div>
+			<div id="posao">
+				<div class="tamno"></div>
+				<div class="tekst">
+					<marquee  direction="left" Scrollamount=12>
+						<p>Hitno potreban pizza majstor! <span class="marginLeft">Zainteresovani neka se jave na broj: +381 11 584 443</span> <span class="marginLeft">Hitno potreban pizza majstor!</span> 
+						<span class="marginLeft">Zainteresovani neka se jave na broj: +381 11 584 443</span></p>
+					</marquee>
+				</div>
+			</div>
+			<div class="proizvodi marginBottom">
+				<div class="naslov marginTop">
+						<h2>NAJPOPULARNIJI RECEPTI OVE NEDELJE</h2>
+						<div class="hr"></div>
+				</div>
+				<div class="proizvod borderRight">
+					<h3>Svečana posna pogača</h3>
+					<br/>
+					<p>Sastojci:</p>
+					<br/>
+					<ul>
+						<li>500 ml vode</li>
+						<li>1 kašika šećera</li>
+						<li>40 g svežeg ili 10 g suvog kvasca</li>
+						<li>1 kašika soli</li>
+						<li>100 ml ulja</li>
+						<li>900 g brašna + malo da se premesi</li>
+						<li>100 g margarina</li>
+						<li>2 kašike posnog majoneza</li>
+					</ul>
+					<br/>
+					<p>Priprema:</p>
+					<br/>
+					<p>Kvasac i šećer preliti sa 200 ml tople vode, promešati i ostaviti desetak minuta da se kvasac aktivira. Odmeriti 900g brašna, pa polovinu staviti u posudu za mešenje i dodati so, pa promešati.
+					Dodati ostatak vode, ulje, i nadošao kvasac i opet sve promešati.
+					Dodavati ostatak brašna, pa mešati, a zatim umesiti testo.
+					Testo ostaviti 5 minuta da odstoji. Za to vreme rasklonite radnu površinu i pripremite margarin.
+					Testo delimo na dva dela, tako da jedan bude veći u razmeri 1/3 : 2/3.
+					Veći deo testa deliko na 8 delova i oblikujemo loptice, dok manji deo testa samo oblikujemo u veću loptu.
+					Pospemo brašnom i ostavimo da odstoji 30 minuta.
+					Nakon 30 minuta, svih 8 loptica razvlačimo u krug prečika od 15cm do 20cm.
+					Premazujemo jednu i poklapamo drugim krugom i tako spajamo po dva dela testa.
+					Sada imamo 4 dela testa sa po dve loptice.
+					Svaki krug isečemo na 4 dela, pa dobijene trouglove zasečemo po sredini i špic trougla provučemo kroz rasečeni deo, a ivice savijemo ka unutra.
+					Tako radimo sa sva 4 testa i dobijamo 16 delova.
+					U pleh slažemo delove u krug oslanjajući svaki sledeći na prethodni.
+					Od manjeg dela testa koji ste ostavili u lopti otkinemo komadić i ostavimo sa strane.
+					Preostalo testo delimo na 8 delova i oblikujemo loptice koje ubacujemo u sredinu.
+					Od komadića testa oblikujemo cvetić i stavimo u sredinu.
+					Pokrijemo krpom pogaču i ostavimo da odstoji 30 minuta.
+					Premazujemo majonezom sa jako malo margarina i uključujemo rernu da se zagreje na 200 stepeni.
+					Pečemo 40 minuta ili zavisno od rerne i koliko pečeno želite da dobijete.
+					Pečenu pogaču prohladimo i poslužimo.
+					Prijatno!</p>
+					<br/>
+					<p class="bold">Dubravka Savić, Sombor</p>
+				</div>
+				<div class="proizvod borderRight">
+					<h3>Punjena lepinja</h3>
+					<br/>
+					<p>Sastojci:</p>
+					<br/>
+					<ul>
+						<li>200 ml mleka</li>
+						<li>1 kašika šećera</li>
+						<li>25g svežeg ili 7g suvog kvasca</li>
+						<li>200 ml vode</li>
+						<li>100 ml ulja</li>
+						<li>1 kašika soli</li>
+						<li>700 g brašna + malo da se premesi</li>
+						<li>100 g margarina</li>
+					</ul>
+					<br/>
+					<p>Nadev:</p>
+					<br/>
+					<ul>
+						<li>500 g sitnog sira</li>
+						<li>200 g tvrdog sira</li>
+						<li>100 g pečenice, pančete ili nečeg sličnog sušenog</li>
+					</ul>
+					<br/>
+					<p>Priprema:</p>
+					<br/>
+					<p>U toplo mleko potopiti kvasac i šećer, promešati i ostaviti desetak minuta da se kvasac aktivira.
+					Margarin staviti u zamrzivač.
+					Odmeriti 700 g brašna i staviti u posudu za mešenje, dodati so i promešati.
+					Dodati vodu i 70 – 80 ml ulja, promešati, pa dodati aktiviran kvasac i nastaviti mešanje varjačom.
+					Preliti ostatkom ulja, premesiti i ostaviti pokriveno krpom, na toplom mestu sat vremena da testo naraste.
+					Napraviti nadev za to vreme. Pomešati sitni sir sa rendanim tvrdim sirom i iseckanim suvim mesom.
+					Nadošlo testo uz pomoć brašna razvući u pravougaonik pa narendati margarin i uviti u rolat.
+					Rolat malo rukama nabiti pa iseći na onoliko delova koliko lepinja želite da dobijete.
+					Uzeti svaki deo, pa okrenuti, polegnuti ga i rukom razvući/istiskati tako da vam je sredina nešto deblja, a krajevi tanki.
+					Na sredinu staviti punu kašiku nadeva pa podići ivice i spojiti na sredinu.
+					Okrenuti lopticu pa izvrteti na stolu, kako bi se zatvorila i rukom malo istiskati.
+					Uraditi tako sa svim delovima testa.
+					Svaki deo testa oklagijom blago razvaljati u krug prečnika 15cm i slagati u pleh.
+					Umutiti žumance i jednu kašiku šećera, pa premazati lepinje.
+					Ostaviti da rastu 30 minuta, a rernu uključiti na 200 stepeni.
+					Peći lepinje 20 – 25 minuta.
+					Prijatno!</p>
+					<br/>
+					<p class="bold">Milovan Aranđelović, Apatin</p>
+				</div>
+				<div class="proizvod">
+					<h3>Domaći kroasani</h3>
+					<br/>
+					<p>Sastojci:</p>
+					<br/>
+					<ul>
+						<li>600 ml vode</li>
+						<li>1 kašika šećera</li>
+						<li>40 gr svežeg ili 10 gr suvog kvasca</li>
+						<li>50 ml ulja</li>
+						<li>1 – 2 kašike soli (zavisno da li pravite slatke ili slane kroasane)</li>
+						<li>375 margarina ili maslaca</li>
+						<li>1 kg mekog brašna</li>
+						<li>jaje za premazivanje (opciono)</li>
+					</ul>
+					<br/>
+					<p>Priprema:</p>
+					<br/>
+					<p>Prvo stavimo margarin ili maslac u zamrzivač. U posudu za mešenje sipati toplu vodu.
+					Dodati šećer, kvasac i jednu kašiku brašna i sve žicom promešati.
+					Dodati brašna, pa opet izmešati.
+					Dodati zatim so, pola mere ulja i još brašna.
+					So odredite sami, zavisno da li pravite slatke ili slane kroasane.
+					Sve izmešati i postepeno dodati brašno sve dok testo ne postane tvrđe.
+					Za mešenje je potrebno nekih 900 – 920gr brašna.
+					Kada umesimo testo stavimo ga na radnu površinu i prelijemo ostatkom ulja.
+					Mesimo sve dok se ulje potpuno ne ugradi u testo.
+					Pospemo brašno po stolu, pa testo delimo na 16 delova.
+					Svaki deo oblikujemo u lopticu, prekrijemo krpom i ostavimo 30 minuta da odstoji.
+					Posle 30 minuta svaku lopticu uz pomoć oklagije i malo brašna razvučemo na prečnik, otprilike, 20cm.
+					Odaberemo dva najveća komada testa i te krugove odvojimo.
+					Prvo stavimo jedan od većih krugova dole, pa narendamo maslac. Stavimo preko drugi krug testa i njega rukom razvučemo po rubovima testa ispod. Rukom od gore sve zalepimo.
+					Ponavljamo postupak sve do poslednjeg dela testa. Od gore stavljamo ono drugo veće testo koje ste odabrali i sve opet rukom istiskamo.
+					Primetiće te da kako slažete i stiskate, tako se krugovi šire i prečnik je sve veći.
+					Pospemo brašnom ispod oko naslaganog testa i polako oklagijom razvlačimo prvo stiskajući sredinu, pa ostale delove.
+					Pred kraj okrenemo testo, još dodatno razvučemo i sečemo na više ili manje delova. Puniti po želji.
+					Uviti kroasane i poslagati u obložen pleh.
+					Pokriti krpom i ostaviti da odstoji 30 minuta.
+					Uključiti rernu da se zagreje na 200 stepeni, pa kroasane premazati umućenim jajetom.
+					Peći 25 minuta ili do željene boje.
+					Prijatno!</p>
+					<br/>
+					<p class="bold">Zorica Negovanović, Zubin Potok</p>
+				</div>
+			</div>
+			<div class="proizvodi marginBottom">
+				<div class="naslov ">
+					<h2>GOVORILI SU O NAMA</h2>
+					<div class="hr"></div>
+				</div>
+				<div class="mušterija proizvod">
+					<img src="img/DragutinTorbica.png" alt="Kroasan">
+					<h3>Dragutin Torbica, Glumac</h3>
+					<br/>
+					<p>„Posle snimanja, najviše volim da pojedem svež burek sa mesom iz „Pekare Savanović". Okruženje u pekari je veoma prijatno, pa često jedem i u pekari ako stolovi nisu zauzeti. Sve najbolje!"</p>
+				</div>
+				<div class="mušterija proizvod">
+					<img src="img/MarinaObradović.png" alt="Hleb">
+					<h3>Marina Obradović, Zubarka</h3>	
+					<br/>
+					<p>„Najomiljenija pekara! Prilično sam sigurna da svakodnevno idem u „Pekaru Savanović". Nikada me ne razočaraju, najviše se radujem akcijama na određene proizvode koje nikako ne propuštam."</p>	
+				</div>
+				<div class="mušterija proizvod">
+					<img src="img/MihajloPavić.png" alt="Sendvič">
+					<h3>Mihajlo Pavić, Skijaš</h3>	
+					<br/>
+					<p>„Sve pohvale za rad pekare. Najviše mi se sviđa njihova pouzdanost. Volim da naručujem dosta njihovih proizvoda i raduje me što se pekara trudi da često objavi i nove proizvode. Pozdrav!"</p>
+				</div>
+			</div>
 		</main>
 		<footer>
 			<div class="sadržaj-futera">
 				<div class="podaci">
-					<h4>Kontakt</h4>
-					<p><strong>Telefon</strong>: +381 11 584 443</p>
-					<p><strong>E-mail</strong>: pekarasavanovic@gmail.com</p>
-					<p><strong>Adresa</strong>: Svetog Save 23</p>
+					<div class="naslov-podaci">
+						<h4>Kontakt</h4>
+					</div>
+					<p><span class="bold">Telefon:</span> +381 11 584 443</p>
+					<p><span class="bold">E-mail:</span> pekarasavanovic@gmail.com</p>
+					<p><span class="bold">Lokacija:</span> Beograd</p>
+					<p><span class="bold">Adresa:</span> Svetog Save 23</p>
 				</div>
-				<div id="logo-futer">
-					<a href="index.html">
-						<img src="img/logooo.png" class="logo" alt="Logo"/>
-					</a>
+				<div class="podaci">
+					<div id="logo-futer">
+						<a href="index.html">
+							<img src="img/logo2.png" class="logo" alt="Logo"/>
+						</a>
+					</div>
 					<div class="linkovi">
 						<a href="https://www.facebook.com/" target="_blank">
 							<i class="fa-brands fa-facebook"></i>
@@ -141,16 +332,40 @@
 						<a href="https://www.twitter.com/" target="_blank">
 							<i class="fa-brands fa-twitter"></i>
 						<a>
-						<a href="https://www.twitter.com/" target="_blank">
+						<a href="rss.xml" target="_blank">
 							<i class="fa-solid fa-rss"></i>
 						<a>
-						<a href="https://www.twitter.com/" target="_blank">
+						<a href="sitemap.xml" target="_blank">
 							<i class="fa-solid fa-sitemap"></i>
 						<a>
 					</div>
+					<div class="kopirajt">
+						<p>Sva prava zadržana &#169; Pekara Savanović</p>
+					</div>
 				</div>
 				<div class="podaci">
-					<>
+					<div class="naslov-linkovi">
+						<h4>Linkovi</h4>
+					</div>
+					<div class="futer-lista">
+						<ul>
+							<li>
+								<a href="index.html">Početna</a>
+							</li>
+							<li>
+								<a href="o-nama.html">O nama</a>
+							</li>
+							<li>
+								<a href="proizvodi.html">Proizvodi</a>
+							</li>
+							<li>
+								<a href="kontakt.html">Kontakt</a>
+							</li>
+							<li>
+								<a href="autor.html">Autor</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</footer>
