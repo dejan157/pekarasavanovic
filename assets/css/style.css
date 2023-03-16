@@ -17,20 +17,16 @@ a{
 	color: #cfb27e !important;
 	border-bottom: 2px solid #cfb27e;
 }
-nav ul li{
-	list-style-type: none;
-	display: inline;
-}
 .center{
 	margin: 0px, auto;
-	background-color:rgba(48, 39, 21,0.7);
+	background-color:rgba(48, 39, 21, 0.7);
 	height:80px;
 }
-#logo2{
+#logo{
 	float: left;
 	display: inline-block;
 }
-.logo{
+#logo img{
 	width: 450px;
 	margin-top:15px;
 	margin-left:30px;
@@ -43,6 +39,9 @@ nav{
 	margin: 10px 50px;
 }
 nav ul li{
+	list-style-type: none;
+	display: inline;
+	letter-spacing:1px;
 	margin-left: 50px;
 	display: inline-block;
 	padding: 17px 15px 0px 0px;
@@ -50,53 +49,45 @@ nav ul li{
 	font-size: 18px;
 }
 nav ul li a{
-	font-weight: 700;
+	font-weight: 500;
 	color: #FFF;
 }
 nav ul li a:hover{
 	border-bottom: 2px solid #cfb27e;
-	color:#cfb27e;
 }
 .clear{
 	clear: both;
 }
-:root{
-	--boja:#fff;
-}
-
-header{
+header, footer, #pekara{
 	width:100%;
+}
+header{
 	display: block;
 	position: fixed;
 	z-index: 3;
 }
 footer{
-	width: 100%;
 	background-color:rgb(48, 39, 21);
 	display: block;
 }
 #pekara{
 	text-align:center;
-	width:100%;
-	/* position:absolute; */
-	/* background-color:rgba(0, 0, 0, 0.2); */
-	/* height:inherit; */
+}
+#pekara h1, #pekara p{
+	position: relative;
+	letter-spacing: 1px;
+	font-style:italic;
+	top: 340px;
+	text-shadow: 2px 2px 2px #000;
 }
 #pekara h1{
 	font-size: 110px;
-	position: relative;
-    letter-spacing: 1px;
-	top: 340px;
-	font-style:italic;
-	text-shadow: 2px 2px 2px #000;
 }
 #pekara p{
 	font-size:40px;
-	letter-spacing:1px;
-	position: relative;
-	top: 340px;
-	font-style:italic;
-	text-shadow: 2px 2px 2px #000;
+	font-weight:900;
+	animation-name: fadeIn;
+    animation-duration: 1s;
 }
 .dugme{
     border: none;
@@ -113,7 +104,7 @@ footer{
 }
 .strelica a{
     color: #fff;
-    font-size: 40px;
+    font-size: 50px;
     position: relative;
     animation: animacija 1s infinite;
     text-shadow: 2px 2px 5px #000;
@@ -122,8 +113,11 @@ footer{
     0%{
         bottom: -50px;
     }
+	50%{
+		bottom: -60px;
+	}
     100%{
-        bottom: -65px;
+        bottom: -70px;
     }
 }
 .top{
@@ -138,12 +132,11 @@ footer{
 #pekara p, #pekara h1, #pekara button{
 	color:#FFF;
 }
-#pekara button:hover, .dugme:hover{
+.dugme:hover{
 	background-color: #27963d;
 	color: #FFF;
 }
 .back{
-	/* background-color:rgba(255,255,255,0.7); */
 	height:970px;
 	background-image: url("../img/pozadina-početna.jpg");
 	background-repeat: no-repeat;
@@ -170,12 +163,10 @@ footer{
 	width:23.5%;
 	background-color:rgba(207, 178, 126, 0.3);
 	border-radius:30px;
-	border:0px solid #cfb27e;
+	transition: box-shadow 0.5s;
 }
 .ponuda:hover{
 	box-shadow: 0px 20px 30px rgb(48, 39, 21);
-	transition: ease-in;
-	transition-duration: 0.2s;
 }
 .ponude p{
 	font-size:17px;
@@ -187,31 +178,31 @@ footer{
 }
 .proizvod img{
 	border-radius:15px;
-	box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 70%);
+	box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
 	margin-bottom:30px;
 }
-.mušterija img{
-	border-radius:50%;
-	width:40%;
-	box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 70%); 
-}
-.transformacija img:hover{
-	transition: transform 0.3s ease;
-	transform: scale(1.1);
-}
-.mušterija{
-	text-align:center;
-}
-.mušterija p{
-	padding:0px 20px;
-}
-
 .proizvod h3{
 	font-size: 25px;
 }
 .cena{
 	float:right;
 	font-weight:bold;
+}
+.mušterija{
+	text-align:center;
+}
+.mušterija img{
+	border-radius:50%;
+	width:40%;
+}
+.mušterija p{
+	padding:0px 20px;
+}
+.transformacija img{
+	transition: transform 0.5s ease;
+}
+.transformacija img:hover{
+	transform: scale(1.1);
 }
 #opekari{
 	width:100%;
@@ -223,12 +214,9 @@ footer{
 	width:80%;
 	height:410px;
 }
-.marginBottom{
-	margin-bottom:100px;
-}
 .opekari-sadržaj img{
 	border-radius: 15px;
-	box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 70%);
+	box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
 }
 .opekari-sadržaj-levo{
 	display: inline;
@@ -254,6 +242,9 @@ footer{
 }
 .opekari-sredina img{
 	margin-left:100px;
+}
+.marginBottom{
+	margin-bottom:100px;
 }
 .slika img {
     border-radius: 20px;
@@ -298,10 +289,10 @@ footer{
   font-weight: bold;
 }
 .naslov-podaci h4, .podaci p{
-	text-align:start;
+	text-align: left;
 }
 .naslov-linkovi{
-	text-align: end;
+	text-align: right;
 }
 #logo-futer img{
 	width:100%;
@@ -315,7 +306,6 @@ footer{
 }
 .linkovi a{
 	padding:10px;
-	background-color:;
 	border-radius:5px;
 	margin-top:10px;
 	font-size:20px;
@@ -358,13 +348,8 @@ footer{
 	letter-spacing:5px;
 	color:#693d0c;
 }
-.hr {
+.hr{
     border-bottom: 4px solid #cfb27e;
-    width: 100px;
-    margin: 10px auto;
-}
-.hr-galerija{
-	border-bottom: 4px solid #693d0c;
     width: 100px;
     margin: 10px auto;
 }
@@ -390,8 +375,8 @@ footer{
 	border: 1px solid #c2c2c2;
 }
 #forma textarea{
-	resize: vertical;
 	height: 200px;
+	resize: vertical;
 }
 #forma #naruči, #forma #odustani{
 	width: 15%;
@@ -401,18 +386,17 @@ footer{
 	font-weight: 600;
 	letter-spacing: 2px;
 	border-radius:20px;
+	transition: all 0.3s;
 }
 #forma #naruči:hover, #forma #odustani:hover{
 	background-color: #27963d;
-	color:#FFF
-	font-weight: 700;
+	color:#FFF;
 }
 form{
 	width: 100%;
 }
 .imePrezime{
 	width: 48%;
-	/* outline:none; */
 }
 #mapa{
 	width:45%;
@@ -420,20 +404,14 @@ form{
 #mapa iframe {
     width: 100%;
     height: 100%;
-    border-radius: 5px;
     border: 0px;
+	border-radius:30px;
+	box-shadow: 0px 5px 10px 0px rgb(48, 39, 21);
 }
 #forma {
     width: 45%;
 }
-#kontakt {
-    width: 90%;
-    margin: 0px auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-#posao {
+#posao{
     position: relative;
     background-image: url(../img/pozadina-posao.jpg);
     background-size: cover;
@@ -445,8 +423,8 @@ form{
 .tamno{
     background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     z-index: 0;
     width: 100%;
     height: 100%;
@@ -465,17 +443,39 @@ form{
 .proizvod ul li{
 	margin-left:20px;
 }
-
-
-#mojaSlika img{
-	width:600px;
-	height:600px;
-	border-radius:40px;
+#mojaSlika{
+	margin:0px auto;
 }
-#autor{
+#biografija{
+	margin:0px auto;
+	font-size:17px;
+	text-align:center;
+	font-weight:bold;
+}
+#mojaSlika img{
+	border-radius:40px;
+	box-shadow:0px 5px 10px 0px #000;
+}
+#podaci{
+	width:45%;
+}
+#autor, #kontakt{
 	width: 90%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+@keyframes fadeIn{
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+.razmak{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	color:#27963d;
 }

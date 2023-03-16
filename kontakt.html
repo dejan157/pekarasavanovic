@@ -6,17 +6,17 @@
 		<meta name="author" content="Dejan Savanović">
 		<meta name="description" content="Pekara Savanović je pekara visokog kvaliteta koja ima najvernije kupce">
 		<meta name="copyright" content="Sva prava zadržana od strane pekare Savanović">
-		<title>Pekara Savanović - Ukusna strana interneta</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<link rel="shourtcut icon" href="img/favicon.ico"/>
+		<title>Naručite - Pekara Savanović - Ukusna strana interneta</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+		<link rel="shourtcut icon" href="assets/img/favicon.ico"/>
 		<script src="https://kit.fontawesome.com/a9822c877d.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header>
 			<div class="center">
-				<div id="logo2">
+				<div id="logo">
 					<a href="index.html">
-						<img src="img/logo.png" class="logo" alt="logo"/>
+						<img src="assets/img/logo.png" alt="logo"/>
 					</a>
 				</div>
 				<nav>
@@ -41,7 +41,6 @@
 				<div class="clear"></div>
 			</div>
 		</header>
-		
 		<div class="back">
 			<div id="pekara">
 				<h1>Naručite brzo</h1>
@@ -51,83 +50,84 @@
 				</div>
 				<div class="strelica">
 					<a href="#kontakt">
-						<i class="fa-solid fa-arrow-down"></i>
+						<i class="fa-solid fa-down-long"></i>
 					</a>
 				</div>
 			</div>
 		</div>
-		<div id="kontakt">
-			<div class="marginTop naslov">
-				<h2>Poručite ovde</h2>
-				<div class="hr"></div>
+		<main>
+			<div id="kontakt">
+				<div class="marginTop naslov">
+					<h2>Poručite ovde</h2>
+					<div class="hr"></div>
+				</div>
+				<div id="forma">
+					<form method="post" action="#">
+						<div class="form imePrezime">
+							<label for="ime">Ime:</label>
+							<br/>
+							<input type="text" name="ime" id="ime" placeholder="Unesite Vaše ime" required/>
+						</div>
+						<div class="form imePrezime">
+							<label for="prezime">Prezime:</label>
+							<br/>
+							<input type="text" name="prezime" id="prezime" placeholder="Unesite Vaše prezime" required/>
+						</div>
+						<div class="form">
+							<label for="email">E-mail:</label>
+							<br/>
+							<input type="email" name="email" id="email" placeholder="Unesite Vašu e-mail adresu" required/>
+						</div>
+						<div class="form">
+							<label for="adresa">Adresa:</label>
+							<br/>
+							<input type="text" name="adresa" id="adresa" placeholder="Unesite Vašu adresu" required/>
+						</div>
+						<div class="form">
+							<label for="izaberite">Izaberite proizvod:</label>
+							<br/>
+							<select name="izaberite" id="izaberite">
+								<option>Hleb Martin</option>
+								<option>Kroasan sa vanilom</option>
+								<option>Đački sendvič</option>
+								<option>Pizza Italiana</option>
+								<option>Čizkejk sa brusnicom</option>
+								<option>Burek sa mesom</option>
+								<option>Crni hleb</option>
+								<option>Domaća krofna sa pekmezom</option>
+								<option>Zokina pljeskavica</option>
+							</select>
+						</div>
+						<div class="form">
+							<label for="poruka">Poruka:</label>
+							<br/>
+							<textarea name="poruka" id="poruka" placeholder="Vaša poruka/napomena:"></textarea>
+						</div>
+						<div class="form">
+							<input type="submit" value="NARUČI" id="naruči" name="naruči"/>
+							<input type="reset" value="ODUSTANI" id="odustani" name="odustani"/>
+						</div>
+					</form>
+				</div>
+				<div id="mapa">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.351420552377!2d20.483089951637794!3d44.814671807515055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9609031735%3A0xc17ed71f59ac4725!2z0JLQuNGB0L7QutCwINCY0KbQoiDRiNC60L7Qu9Cw!5e0!3m2!1ssr!2srs!4v1678513846952!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
+				</div>
 			</div>
-			<div id="forma">
-                <form method="post" action="#">
-                    <div class="form imePrezime">
-                        <label for="ime">Ime:</label>
-                        <br/>
-                        <input type="text" name="ime" id="ime" placeholder="Unesite Vaše ime" required/>
-                    </div>
-                    <div class="form imePrezime">
-						<label for="prezime">Prezime:</label>
-                        <br/>
-                        <input type="text" name="prezime" id="prezime" placeholder="Unesite Vaše prezime" required/>
-                    </div>
-                    <div class="form">
-						<label for="email">E-mail:</label>
-                        <br/>
-                        <input type="email" name="email" id="email" placeholder="Unesite Vašu e-mail adresu" required/>
-                    </div>
-					<div class="form">
-						<label for="adresa">Adresa:</label>
-                        <br/>
-                        <input type="text" name="adresa" id="adresa" placeholder="Unesite Vašu adresu" required/>
-                    </div>
-					<div class="form">
-						<label for="izaberite">Izaberite proizvod:</label>
-                        <br/>
-                        <select name="izaberite" id="izaberite">
-							<option>Hleb Martin</option>
-							<option>Kroasan sa vanilom</option>
-							<option>Đački sendvič</option>
-							<option>Pizza Italiana</option>
-							<option>Čizkejk sa brusnicom</option>
-							<option>Burek sa mesom</option>
-							<option>Crni hleb</option>
-							<option>Domaća krofna sa pekmezom</option>
-							<option>Zokina pljeskavica</option>
-						</select>
-                    </div>
-                    <div class="form">
-                        <label for="poruka">Poruka:</label>
-                        <br/>
-                        <textarea name="poruka" id="poruka" placeholder="Vaša poruka/napomena:"></textarea>
-                    </div>
-                    <div class="form">
-						<input type="submit" value="NARUČI" id="naruči" name="naruči"/>
-						<input type="reset" value="ODUSTANI" id="odustani" name="odustani"/>
-                    </div>
-                </form>
-            </div>
-			<div id="mapa">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.351420552377!2d20.483089951637794!3d44.814671807515055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9609031735%3A0xc17ed71f59ac4725!2z0JLQuNGB0L7QutCwINCY0KbQoiDRiNC60L7Qu9Cw!5e0!3m2!1ssr!2srs!4v1678513846952!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
-			</div>
-		</div>
+		<main>
 		<footer>
 			<div class="sadržaj-futera marginTop">
 				<div class="podaci">
 					<div class="naslov-podaci">
 						<h4>Kontakt</h4>
 					</div>
-					<p><strong>Telefon</strong>: +381 11 584 443</p>
-					<p><strong>E-mail</strong>: pekarasavanovic@gmail.com</p>
-					<p><strong>Lokacija</strong>: Beograd</p>
-					<p><strong>Adresa</strong>: Svetog Save 23</p>
+					<p>Telefon: +381 11 584 443</p>
+					<p>E-mail: pekarasavanovic&#64;gmail&#46;com</p>
+					<p>Adresa: Svetog Save 23, Beograd</p>
 				</div>
 				<div class="podaci">
 					<div id="logo-futer">
 						<a href="index.html">
-							<img src="img/logo2.png" class="logo" alt="Logo"/>
+							<img src="assets/img/logo2.png" class="logo" alt="Logo"/>
 						</a>
 					</div>
 					<div class="linkovi">
@@ -140,10 +140,10 @@
 						<a href="https://www.twitter.com/" target="_blank">
 							<i class="fa-brands fa-twitter"></i>
 						<a>
-						<a href="https://www.twitter.com/" target="_blank">
+						<a href="rss.xml" target="_blank">
 							<i class="fa-solid fa-rss"></i>
 						<a>
-						<a href="https://www.twitter.com/" target="_blank">
+						<a href="sitemap.xml" target="_blank">
 							<i class="fa-solid fa-sitemap"></i>
 						<a>
 					</div>
