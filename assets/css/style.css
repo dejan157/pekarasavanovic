@@ -8,7 +8,7 @@
 	scroll-behavior: smooth;
 }
 body{
-	/* overflow-x: hidden; */
+	overflow-x: hidden;
 }
 a{
 	text-decoration: none;
@@ -137,12 +137,24 @@ footer{
 	color: #FFF;
 }
 .back{
-	height:970px;
 	background-image: url("../img/pozadina-početna.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position:relative;
 	background-attachment:fixed;
+}
+.back-pocetna{
+	height:970px;
+}
+.back-ostalo{
+	height:630px;
+}
+.ostalo{
+	top: 170px !important;
+}
+.top2{
+	top: 220px !important;
+	position: relative;
 }
 #block-ponude{
 	padding:100px 0px;
