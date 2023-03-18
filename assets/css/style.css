@@ -17,7 +17,10 @@ a{
 	color: #cfb27e !important;
 	border-bottom: 2px solid #cfb27e;
 }
-.center{
+header{
+	display: block;
+	position: fixed;
+	z-index: 3;
 	margin: 0px, auto;
 	background-color:rgba(48, 39, 21, 0.7);
 	height:80px;
@@ -61,14 +64,17 @@ nav ul li a:hover{
 header, footer, #pekara{
 	width:100%;
 }
-header{
-	display: block;
-	position: fixed;
-	z-index: 3;
-}
 footer{
 	background-color:rgb(48, 39, 21);
 	display: block;
+}
+.sadržaj-futera{
+	display:flex;
+	align-items:center;
+	padding:30px 0px;
+	color:#FFF;
+	width:1200px;
+	margin: 0px auto;
 }
 #pekara{
 	text-align:center;
@@ -231,22 +237,18 @@ footer{
 	box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
 }
 .opekari-sadržaj-levo{
-	display: inline;
     float: left;
-    width: 50%;
-    height: 410px;
-    padding: 30px;
-    box-sizing: border-box;
-    text-align: justify;
 }
-.opekari-sadržaj-desno{
-	display: inline;
+.opekari-sadržaj-desno{	
     float: right;
-    width: 50%;
+}
+.opekari-sadržaj-desno, .opekari-sadržaj-levo{
+	width: 50%;
     height: 410px;
     padding: 30px;
     box-sizing: border-box;
     text-align: justify;
+	display: inline;
 }
 .opekari-sredina{
 	width:100%;
@@ -266,14 +268,6 @@ footer{
 	transform: scale(1.1);
 	transition: ease;
 	transition-duration: 0.3s;
-}
-.sadržaj-futera{
-	display:flex;
-	align-items:center;
-	padding:30px 0px;
-	color:#FFF;
-	width:1200px;
-	margin: 0px auto;
 }
 .podaci{
 	width:33.3%;
@@ -341,7 +335,6 @@ footer{
 }
 .proizvod{
 	padding:0px 20px 0px 20px;
-	
 }
 .proizvod p{
 	width:500px;
@@ -375,8 +368,9 @@ footer{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	width: 100%;
 }
-.form{
+.deo-forme{
 	width: 100%;
 	margin-bottom: 10px;
 }
@@ -404,9 +398,6 @@ footer{
 	background-color: #27963d;
 	color:#FFF;
 }
-form{
-	width: 100%;
-}
 .imePrezime{
 	width: 48%;
 }
@@ -420,9 +411,7 @@ form{
 	border-radius:30px;
 	box-shadow: 0px 5px 10px 0px rgb(48, 39, 21);
 }
-#forma {
-    width: 45%;
-}
+
 #posao{
     position: relative;
     background-image: url(../img/pozadina-posao.jpg);
